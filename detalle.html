@@ -1,37 +1,68 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <script src="https://cdn.tailwindcss.com"></script>
     <title>Document</title>
-</head>
-<body class="bg-teal-200 px-8">
+  </head>
+  <body class="bg-teal-200 px-8">
     <div class="bg-[#ffffff] rounded-[20px] pb-2">
-        <p class="text-lg md:text-7xl font-bold text-center mt-[10px]">PokeDex</p>
+      <p class="text-lg md:text-7xl font-bold text-center mt-[10px]">PokeDex</p>
     </div>
-    <div class="flex border-solid border-2 border[#000000] mt-[50px]">
+    <div>
+      <div
+        class="flex mt-[50px]"
+      >
         <div class="flex justify-center w-[30%]" id="imagen">
-            <img class="rounded-md w-[250px] h-[250px]]" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRWX0kRI8gHFmyJ2L5VVVd7gipEGN4HF78O3a7Tgy4&s" alt="">
+          <img
+            class="rounded-md w-[250px] h-[250px]]"
+            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRWX0kRI8gHFmyJ2L5VVVd7gipEGN4HF78O3a7Tgy4&s"
+            alt=""
+          />
         </div>
-        <div class="border-solid border-2 border-[#000000] w-[70%]">
-            <div id="stats" class="border-solid border-2 border[#0000FF] w-[50%]">
-                <p>
-                    STATS:
-                </p>
-                <p>
-                    HP:
-                </p>
-                <p>
-                    POWER:
-                </p>
-                <p>
-                    ATTACK:
-                </p>
-            </div>
-            <div></div>
+        <div class="flex w-[70%]">
+          <div
+            id="stats"
+            class="w-[50%] h-[100%] pl-[10px]"
+          >
+            <p class="text-center">STATS:</p>
+            <p>HP:</p>
+            <p>POWER:</p>
+            <p>ATTACK:</p>
+          </div>
+          <div
+            id="habilidades"
+            class="w-[50%] h-[100%]"
+          >
+            <p class="text-center">HABILIDADES:</p>
+          </div>
         </div>
+      </div>
+      <div class="w-[100%] mt-4">
+        <p class="text-center">VISTAS</p>
+        <div class="flex justify-center">
+          <img class="w-[200px]"
+            src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/1.png"
+            alt=""
+          />
+          <img class="w-[200px]"
+            src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/shiny/1.png"
+            alt=""
+          />
+          <img class="w-[200px]"
+            src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/1.png"
+            alt=""
+          />
+          <img class="w-[200px]"
+            src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/shiny/1.png"
+            alt=""
+          />
+        </div>
+      </div>
+      <button type="button" id="regresar" class="w-[100px] bg-[#ffffff] rounded-[20px] h-[30px]">VOLVER</button>
     </div>
-</body>
+    <script src="detalles.js"></script>
+  </body>
 </html>
